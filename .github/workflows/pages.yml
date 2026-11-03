@@ -1,0 +1,41 @@
+name: Publish GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Prepare project-site build
+        run: |
+          printf "%s\n" "import { defineConfig } from 'vite';" "import react from '@vitejs/plugin-react';" "export default defineConfig({ plugins: [react()], base: './' });" > vite.config.js
+          node -e "const fs=require('fs'); const p='public/manifest.webmanifest'; const m=JSON.parse(fs.readFileSync(p,'utf8')); m.start_url='./'; m.scope='./'; m.icons=m.icons.map(i=>({...i,src:i.src.replace(/^\//,'./')})); fs.writeFileSync(p,JSON.stringify(m,null,2));"
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
