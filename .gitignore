@@ -64,3 +64,15 @@ playwright-report/
 test-results/
 .cache/
 .vite/
+
+# Local files, credentials and generated caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+_site/
+!.env.sample
+!.env.template
+id_rsa
+id_ed25519
+.aws/

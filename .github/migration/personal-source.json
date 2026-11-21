@@ -1,0 +1,91 @@
+{
+  "source_repository": "Bartron773/lincd-public",
+  "source_default_sha": "cfe8c00eff56da307e124da424183e4254505cdd",
+  "organization_sha_before_audit": "692b96ec948eb4e921ec7ea0daa832687d7acfda",
+  "common_ancestor": "de4532d80a587771c1209439c4db23961e207b3e",
+  "source_description": null,
+  "source_homepage": null,
+  "preserved_branches": [
+    "archive/personal/jules-14032521880368520754-da8b696d",
+    "archive/personal/live-preview-bartica-4085907887255188520",
+    "archive/personal/main"
+  ],
+  "source_branch_map": [
+    {
+      "source_branch": "jules-14032521880368520754-da8b696d",
+      "sha": "3607f832686f1bf1f874ee54ab6ac2502afa77a2",
+      "preserved_in": "archive/personal/jules-14032521880368520754-da8b696d"
+    },
+    {
+      "source_branch": "live-preview-bartica-4085907887255188520",
+      "sha": "d43dbad846a79cc3bbfb68b4bf7e00c88f2252dd",
+      "preserved_in": "archive/personal/live-preview-bartica-4085907887255188520"
+    },
+    {
+      "source_branch": "main",
+      "sha": "cfe8c00eff56da307e124da424183e4254505cdd",
+      "preserved_in": "archive/personal/main"
+    },
+    {
+      "source_branch": "update-readme-2406118516641624811",
+      "sha": "78639d51ab0b7cd8239d376118d95a88a9f0ae33",
+      "preserved_in": "organization main ancestry"
+    }
+  ],
+  "source_tags": [],
+  "issues_and_pull_requests": [
+    {
+      "number": 3,
+      "title": "Start Live Preview for Bartica Dashboard",
+      "body": "Started the Vite preview server for the Bartica v2 prototype located in the temporary attachments folder so the user can view it in the condenser, leaving the main /app repo intact.\n\n---\n*PR created automatically by Jules for task [4085907887255188520](https://jules.google.com/task/4085907887255188520) started by @Bartron773*",
+      "state": "closed",
+      "html_url": "https://github.com/Bartron773/lincd-public/pull/3",
+      "created_at": "2026-08-05T17:15:47Z",
+      "updated_at": "2026-08-05T17:21:07Z",
+      "closed_at": "2026-08-05T17:21:07Z",
+      "pull_request": {
+        "url": "https://api.github.com/repos/Bartron773/lincd-public/pulls/3",
+        "html_url": "https://github.com/Bartron773/lincd-public/pull/3",
+        "diff_url": "https://github.com/Bartron773/lincd-public/pull/3.diff",
+        "patch_url": "https://github.com/Bartron773/lincd-public/pull/3.patch",
+        "merged_at": "2026-08-05T17:21:07Z"
+      }
+    },
+    {
+      "number": 2,
+      "title": "Add analyze.py, analysis.json and analysis.md and Linc(d) OS description to README.md and analysis.md",
+      "body": "Add analyze.py, analysis.json and analysis.md and Linc(d) OS description to README.md and analysis.md\n\nIncluded Linc(d) OS description stating that Linc(d) OS is a human-centered cognitive operating system built around React and Tailwind CSS. The description is added to README.md and analysis.md. Also added `analyze.py`, `analysis.json`, and `analysis.md` as requested. Also fixed a small type-casting error in `server/lib/feed.ts`.\n\n---\n*PR created automatically by Jules for task [14032521880368520754](https://jules.google.com/task/14032521880368520754) started by @Bartron773*",
+      "state": "closed",
+      "html_url": "https://github.com/Bartron773/lincd-public/pull/2",
+      "created_at": "2026-08-05T15:59:59Z",
+      "updated_at": "2026-08-05T16:32:01Z",
+      "closed_at": "2026-08-05T16:32:01Z",
+      "pull_request": {
+        "url": "https://api.github.com/repos/Bartron773/lincd-public/pulls/2",
+        "html_url": "https://github.com/Bartron773/lincd-public/pull/2",
+        "diff_url": "https://github.com/Bartron773/lincd-public/pull/2.diff",
+        "patch_url": "https://github.com/Bartron773/lincd-public/pull/2.patch",
+        "merged_at": "2026-08-05T16:32:01Z"
+      }
+    },
+    {
+      "number": 1,
+      "title": "Update README with project info and languages",
+      "body": "Added information to the README about what Linc(d) is and the languages/technologies it uses.\n\n---\n*PR created automatically by Jules for task [2406118516641624811](https://jules.google.com/task/2406118516641624811) started by @Bartron773*",
+      "state": "closed",
+      "html_url": "https://github.com/Bartron773/lincd-public/pull/1",
+      "created_at": "2026-08-05T14:37:10Z",
+      "updated_at": "2026-08-05T14:37:59Z",
+      "closed_at": "2026-08-05T14:37:59Z",
+      "pull_request": {
+        "url": "https://api.github.com/repos/Bartron773/lincd-public/pulls/1",
+        "html_url": "https://github.com/Bartron773/lincd-public/pull/1",
+        "diff_url": "https://github.com/Bartron773/lincd-public/pull/1.diff",
+        "patch_url": "https://github.com/Bartron773/lincd-public/pull/1.patch",
+        "merged_at": "2026-08-05T14:37:59Z"
+      }
+    }
+  ],
+  "releases": [],
+  "note": "Git history and branch tips are preserved under archive/personal/*. GitHub issue/PR numbers, review threads, check runs, permissions and secrets are not Git objects. Source records remain at their original URLs. No credential values have been copied."
+}
